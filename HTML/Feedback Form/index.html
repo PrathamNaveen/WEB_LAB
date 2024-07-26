@@ -1,0 +1,71 @@
+<!-- 
+Create a form to collect Student feedback. (Use textbox, text area,
+checkbox, radio button, select box etc.). 
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Feedback Form</title>
+    <style>
+        input {
+            margin-bottom: 10px;
+        }
+        #branch-label{
+            margin-left: 6px;
+            margin-bottom: 6px;
+        }
+    </style>   
+</head>
+<body>
+    <h2>Student Feedback Form</h2>
+    <form action="response.html" method="POST">
+
+        <!-- Text Fields -->
+        <input type="text" placeholder="Enter your Name" required/>
+        <br>
+        <input type="text" placeholder="Enter your USN" required/>
+        <br>
+        <input type="email" placeholder="Enter your Email" required/>
+        <br>
+
+        <!-- Select Box -->
+        <select id="Semester" required>
+            <option value="" disabled selected>Semester</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+        </select>
+        <br>
+        <br>
+
+        <!-- Radio Button -->
+        <label for="branch" id="branch-label">Branch</label><br>
+        <input type="radio" name="branch" value="CSE"/>
+        <label for="cse">CSE</label><br>
+        <input type="radio" name="branch" value="ISE"/>
+        <label for="ise">ISE</label><br>
+        <input type="radio" name="branch" value="EC"/>
+        <label for="ec">EC</label><br>
+
+        <!-- Text Area -->
+        <label for="Feedback" >Please Provide Feedback</label>
+        <br>
+        <textarea id="Feedback" rows="4" cols="40" required></textarea>
+        <br>
+
+        <!-- Checkbox -->
+        <input type="checkbox" id="terms"/>
+        <label for="terms">Agree to all the terms and conditions</label>
+        <br>
+
+        <!-- Submit -->
+        <input type="submit" value="Submit"/>
+    </form>
+</body>
+</html>

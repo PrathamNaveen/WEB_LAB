@@ -1,0 +1,33 @@
+<!-- Write an XHTML document which displays a form containing text elements to
+input register number, sub-code, marks in three tests and a button element. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Marks</title>
+    <script src="index.js"></script> 
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    
+    <center><h1>Average Of Best Two Tests</h1></center>
+
+    <div id="container">
+        <form>
+            <input type="text" placeholder="Enter Register Number" id="regno">
+            <br /><br />
+            <input type="text" placeholder="Enter Subject Code" id="subcode">
+            <br /><br />
+            <input type="text" placeholder="Enter Test-1 Marks" id="test1">
+            <br /><br />
+            <input type="text" placeholder="Enter Test-2 Marks" id="test2">
+            <br /><br />
+            <input type="text" placeholder="Enter Test-3 Marks" id="test3">
+            <br /> <br />
+            <input type="button" value="Submit" id="button" onclick="getAverage()"/>
+        </form>
+    </div>
+    
+</body>
+</html>

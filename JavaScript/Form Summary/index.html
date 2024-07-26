@@ -1,0 +1,47 @@
+<!-- 
+Create HTML Page that contains form with fields Name, Email,
+Mobile No, Gender, Favorite Color and a button. 
+-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Validation</title>
+  <style>
+    input {
+        margin-bottom: 10px;
+    }
+    span {
+        color: red;
+    }
+  </style>
+  <script src="index.js"></script>
+</head>
+<body>
+  <h1>Form Validation</h1>
+  <form>
+    <input type="text" id="name" placeholder="Enter Name" />
+    <span id="name-error""></span>
+    <br />
+    <input type="email" id="email" placeholder="Enter Email" />
+    <span id="email-error""></span>
+    <br />
+    <input type="text" id="phn-no" placeholder="Enter Phone No" />
+    <span id="phn-no-error""></span>
+    <br />
+    <label for="gender">Male</label>
+    <input type="radio" id="male" name="gender" />
+    <label for="gender">Female</label>
+    <input type="radio" id="female" name="gender" />
+    <span id="gender-error""></span>
+    <br />
+    <input type="text" id="color" placeholder="Enter Favorite Color" />
+    <span id="color-error""></span>
+    <br />
+    <textarea id="summary" rows="5" cols="60"></textarea>
+    <br />
+    <input type="button" value="Submit" onClick="validateAndSummarize()">
+  </form>
+</body>
+</html>
